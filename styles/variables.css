@@ -23,5 +23,8 @@
   --heading-font: Quantico, Aldrich, Roboto, Helvetica, sans-serif;
   --subheading-font: Aldrich, Quantico, Roboto, Helvetica, sans-serif;
   --paragraph-font: Roboto, Helvetica, sans-serif;
+
+  --image-big-url: 'https:picsum.photos/1024';
+  --image-small-url: 'https:picsum.photos/80';
 }
 
