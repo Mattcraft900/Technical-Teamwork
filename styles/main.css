@@ -1,0 +1,34 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Set some site-wide variables */
+:root {
+  --offwhite: #F4FCFC;
+  --yellow:   #FAE943;
+  --orange:   #FABD43;
+  --blue:     #4f5cf0;
+  --navy:     #1E377F;
+  --darkgreen:#1A7565;
+  --babyblue: #84A0E6;
+  --turquoise:#72C8BD;
+  --lightgray:#dce4e4;
+
+  --base-color: var(--offwhite);
+  --base-color2: var(--lightgray);
+  --primary-color1: var(--navy);
+  --primary-color2: var(--darkgreen);
+  --accent-color1: var(--blue);
+  --accent-color2: var(--turquoise);
+
+  --heading-font: Quantico, Aldrich, Roboto, Helvetica, sans-serif;
+  --subheading-font: Aldrich, Quantico, Roboto, Helvetica, sans-serif;
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+}
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
