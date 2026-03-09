@@ -17,7 +17,7 @@ a:hover {
     text-decoration: underline;
 }
 
-header, footer {
+header{
     background-color: var(--primary-color1);
     color: white;
 }
@@ -53,14 +53,13 @@ header nav ul {
     font-weight: bold;
 }
 
-/* These apply to the footer as well */
+/* These will apply to the footer's nav as well */
 nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0 60px;
-    color: white;
 }
 
 nav li {
