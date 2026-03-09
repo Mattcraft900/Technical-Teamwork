@@ -3,18 +3,30 @@
 
 body {
     background-color: var(--offwhite);
+    font-family: var(--paragraph-font);
 }
 
-header {
+/* For ALL <a> elements */
+a, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header, footer {
     background-color: var(--primary-color1);
     color: white;
 }
 
 header>nav {
     display: grid;
-    grid-template-columns: 80px calc(45% - 80px) auto;
+    grid-template-columns: 80px calc(30% - 80px) auto;
     column-gap: 20px;
-    margin: 10px 60px;
+    padding: 10px 60px;
     align-items: center;
 }
 
@@ -34,4 +46,87 @@ header>nav {
     font-size: 30px;
     font-weight: bold;
     text-align: left;
+}
+
+header nav ul {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* These apply to the footer as well */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 60px;
+    color: white;
+}
+
+nav li {
+    margin: 10px;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.hero-img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.title-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    align-content: center;
+    background-color: #00000022;
+}
+
+.title-box h2 {
+    font-family: var(--heading-font); /* Could be its own unique font */
+    font-size: 72px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+.title-box .line1 {
+    font-size: 96px;
+}
+
+hr {
+    width: 600px;
+    height: 12px;
+    margin: 0 auto;
+    background: var(--primary-color1);
+    color: var(--primary-color1);
+    border: 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background-color: var(--primary-color1);
+    color: white;
+}
+
+.content-grid a {
+    font-family: var(--subheading-font);
+    font-size: 48px;
+    text-align: center;
+    text-transform: capitalize; /* Might need to change based on the font */
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--primary-color2);
+}
+
+.mission {
+    grid-area: 1/2/4/3;
 }
